@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 use Monolog\Handler\NullHandler;
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
 
@@ -37,8 +40,12 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
+<<<<<<< HEAD
             'channels' => ['daily'],
             'ignore_exceptions' => false,
+=======
+            'channels' => ['single'],
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         ],
 
         'single' => [
@@ -51,7 +58,11 @@ return [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
+<<<<<<< HEAD
             'days' => 14,
+=======
+            'days' => 7,
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         ],
 
         'slack' => [
@@ -63,7 +74,11 @@ return [
         ],
 
         'papertrail' => [
+<<<<<<< HEAD
             'driver' => 'monolog',
+=======
+            'driver'  => 'monolog',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
             'level' => 'debug',
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
@@ -75,7 +90,10 @@ return [
         'stderr' => [
             'driver' => 'monolog',
             'handler' => StreamHandler::class,
+<<<<<<< HEAD
             'formatter' => env('LOG_STDERR_FORMATTER'),
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
             'with' => [
                 'stream' => 'php://stderr',
             ],
@@ -90,11 +108,14 @@ return [
             'driver' => 'errorlog',
             'level' => 'debug',
         ],
+<<<<<<< HEAD
 
         'null' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
         ],
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     ],
 
 ];

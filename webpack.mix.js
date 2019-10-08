@@ -12,4 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+<<<<<<< HEAD
     .sass('resources/sass/app.scss', 'public/css');
+=======
+   .sass('resources/sass/app.scss', 'public/css');
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7

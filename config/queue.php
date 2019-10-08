@@ -46,22 +46,37 @@ return [
             'host' => 'localhost',
             'queue' => 'default',
             'retry_after' => 90,
+<<<<<<< HEAD
             'block_for' => 0,
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         ],
 
         'sqs' => [
             'driver' => 'sqs',
+<<<<<<< HEAD
             'key' => env('AWS_ACCESS_KEY_ID'),
             'secret' => env('AWS_SECRET_ACCESS_KEY'),
             'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
             'queue' => env('SQS_QUEUE', 'your-queue-name'),
             'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+=======
+            'key' => env('SQS_KEY', 'your-public-key'),
+            'secret' => env('SQS_SECRET', 'your-secret-key'),
+            'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
+            'queue' => env('SQS_QUEUE', 'your-queue-name'),
+            'region' => env('SQS_REGION', 'us-east-1'),
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         ],
 
         'redis' => [
             'driver' => 'redis',
             'connection' => 'default',
+<<<<<<< HEAD
             'queue' => env('REDIS_QUEUE', 'default'),
+=======
+            'queue' => 'default',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
             'retry_after' => 90,
             'block_for' => null,
         ],
@@ -80,7 +95,10 @@ return [
     */
 
     'failed' => [
+<<<<<<< HEAD
         'driver' => env('QUEUE_FAILED_DRIVER', 'database'),
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         'database' => env('DB_CONNECTION', 'mysql'),
         'table' => 'failed_jobs',
     ],

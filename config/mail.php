@@ -11,12 +11,21 @@ return [
     | sending of e-mail. You may specify which one you're using throughout
     | your application here. By default, Laravel is setup for SMTP mail.
     |
+<<<<<<< HEAD
     | Supported: "smtp", "sendmail", "mailgun", "ses",
     |            "postmark", "log", "array"
     |
     */
 
     'driver' => env('MAIL_DRIVER', 'smtp'),
+=======
+    | Supported: "smtp", "sendmail", "mailgun", "mandrill", "ses",
+    |            "sparkpost", "log", "array"
+    |
+    */
+
+    'driver' =>  'smtp',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +38,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+=======
+    'host' => 'smtp.googlemail.com',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +55,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'port' => env('MAIL_PORT', 587),
+=======
+    'port' =>  '465',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +73,13 @@ return [
     */
 
     'from' => [
+<<<<<<< HEAD
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
+=======
+        'address' =>'no-replyhealyhystart@gmail.com',
+        'name' => 'Healthy start',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     ],
 
     /*
@@ -71,7 +93,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+=======
+    'encryption' => 'ssl',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +110,15 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'username' => env('MAIL_USERNAME'),
 
     'password' => env('MAIL_PASSWORD'),
+=======
+    'username' => env('MAIL_USERNAME','healthstart19@gmail.com'),
+
+    'password' => 'Hsapp2019',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
     /*
     |--------------------------------------------------------------------------
@@ -116,6 +148,7 @@ return [
         'theme' => 'default',
 
         'paths' => [
+<<<<<<< HEAD
             resource_path('views/vendor/mail'),
         ],
     ],
@@ -133,4 +166,10 @@ return [
 
     'log_channel' => env('MAIL_LOG_CHANNEL'),
 
+=======
+            resource_path('views/resultemail'),
+        ],
+    ],
+
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 ];

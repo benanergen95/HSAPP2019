@@ -54,8 +54,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
     'asset_url' => env('ASSET_URL', null),
 
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -97,6 +100,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
     | Faker Locale
     |--------------------------------------------------------------------------
     |
@@ -110,6 +114,8 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     | Encryption Key
     |--------------------------------------------------------------------------
     |
@@ -174,7 +180,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
 
+=======
+        Aws\Laravel\AwsServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     ],
 
     /*
@@ -191,7 +202,10 @@ return [
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
+<<<<<<< HEAD
         'Arr' => Illuminate\Support\Arr::class,
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -221,10 +235,18 @@ return [
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
+<<<<<<< HEAD
         'Str' => Illuminate\Support\Str::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+=======
+        'URL' => Illuminate\Support\Facades\URL::class,
+        'Validator' => Illuminate\Support\Facades\Validator::class,
+        'View' => Illuminate\Support\Facades\View::class,
+        'AWS' => Aws\Laravel\AwsFacade::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
     ],
 

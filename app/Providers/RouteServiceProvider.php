@@ -2,8 +2,13 @@
 
 namespace App\Providers;
 
+<<<<<<< HEAD
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
+=======
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
 class RouteServiceProvider extends ServiceProvider
 {

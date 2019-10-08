@@ -13,7 +13,12 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'previous' => '&laquo; Previous',
     'next' => 'Next &raquo;',
+=======
+    'previous' => '« Previous',
+    'next' => 'Next »',
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 
 ];

@@ -44,7 +44,10 @@ return [
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
+<<<<<<< HEAD
             'hash' => false,
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         ],
     ],
 
@@ -100,6 +103,7 @@ return [
         ],
     ],
 
+<<<<<<< HEAD
     /*
     |--------------------------------------------------------------------------
     | Password Confirmation Timeout
@@ -113,4 +117,6 @@ return [
 
     'password_timeout' => 10800,
 
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
 ];

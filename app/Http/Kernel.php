@@ -14,11 +14,18 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
+<<<<<<< HEAD
         \App\Http\Middleware\TrustProxies::class,
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         \App\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+<<<<<<< HEAD
+=======
+        \App\Http\Middleware\TrustProxies::class,
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     ];
 
     /**
@@ -57,7 +64,10 @@ class Kernel extends HttpKernel
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+<<<<<<< HEAD
         'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
@@ -66,7 +76,11 @@ class Kernel extends HttpKernel
     /**
      * The priority-sorted list of middleware.
      *
+<<<<<<< HEAD
      * This forces non-global middleware to always be in the given order.
+=======
+     * This forces the listed middleware to always be in the given order.
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
      *
      * @var array
      */
@@ -74,7 +88,10 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \App\Http\Middleware\Authenticate::class,
+<<<<<<< HEAD
         \Illuminate\Routing\Middleware\ThrottleRequests::class,
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
         \Illuminate\Session\Middleware\AuthenticateSession::class,
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
         \Illuminate\Auth\Middleware\Authorize::class,

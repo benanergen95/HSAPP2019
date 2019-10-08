@@ -13,8 +13,12 @@ return [
     | using this caching library. This connection is used when another is
     | not explicitly specified when executing a given caching function.
     |
+<<<<<<< HEAD
     | Supported: "apc", "array", "database", "file",
     |            "memcached", "redis", "dynamodb"
+=======
+    | Supported: "apc", "array", "database", "file", "memcached", "redis"
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     |
     */
 
@@ -60,7 +64,11 @@ return [
                 env('MEMCACHED_PASSWORD'),
             ],
             'options' => [
+<<<<<<< HEAD
                 // Memcached::OPT_CONNECT_TIMEOUT => 2000,
+=======
+                // Memcached::OPT_CONNECT_TIMEOUT  => 2000,
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
             ],
             'servers' => [
                 [
@@ -76,6 +84,7 @@ return [
             'connection' => 'cache',
         ],
 
+<<<<<<< HEAD
         'dynamodb' => [
             'driver' => 'dynamodb',
             'key' => env('AWS_ACCESS_KEY_ID'),
@@ -85,6 +94,8 @@ return [
             'endpoint' => env('DYNAMODB_ENDPOINT'),
         ],
 
+=======
+>>>>>>> 04d672c50e39fa270d202c42991c425ed25d5ae7
     ],
 
     /*
